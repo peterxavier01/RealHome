@@ -2,26 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (min-width: 768px) {
+  .drop-shadow-custom {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 1, 0.2));
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/********* Hero Slider Styles  *********/
+.splide__pagination {
+  top: -50px;
+  display: flex;
+  gap: 0.5em;
+}
+
+.splide__pagination__page {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  height: 15px !important;
+  width: 15px !important;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff !important;
+  transform: scale(1) !important;
 }
