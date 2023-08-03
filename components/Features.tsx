@@ -17,6 +17,7 @@ const Features = () => {
             alt={feature.text}
             width={26}
             height={26}
+            style={{ width: "auto", height: "auto" }}
             className="text-[#3c3c3c] mb-4 hover:scale-110 hover:rotate-[360deg] duration-500 transition"
           />
           <p className="text-xl text-[#3c3c3c] leading-[50px] text-center font-medium">

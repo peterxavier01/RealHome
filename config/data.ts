@@ -112,3 +112,95 @@ export const slides = [
     subtext: "$910,000",
   },
 ];
+
+export const agents = [
+  {
+    id: 1,
+    src: "/images/agent-02.png",
+    title: "Lisa Kendaw",
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.",
+    tel: "+ 7 (123) 456-78-99",
+    email: "lisa.gerrard@realhome.com",
+  },
+  {
+    id: 2,
+    src: "/images/agent-01.png",
+    title: "Mike Kendaw",
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.",
+    tel: "+ 7 (323) 156-74-93",
+    email: "mike.gerrard@realhome.com",
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    src: "/images/testimonial-01.png",
+    text: "Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem.",
+    author: "Amanda Seyfried",
+    company: "Apple",
+  },
+  {
+    id: 2,
+    src: "/images/testimonial-01.png",
+    text: "Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. ",
+    author: "Julia Roberts",
+    company: "Meta",
+  },
+  {
+    id: 3,
+    src: "/images/testimonial-01.png",
+    text: "Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. ",
+    author: "Ryan Gosling",
+    company: "Amazon",
+  },
+  {
+    id: 4,
+    src: "/images/testimonial-01.png",
+    text: "Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. ",
+    author: "Margot Robbie",
+    company: "Barbie",
+  },
+];
+
+export const clients = [
+  { id: 1, src: "/images/client-01.svg" },
+  { id: 2, src: "/images/client-02.svg" },
+  { id: 3, src: "/images/client-03.svg" },
+  { id: 4, src: "/images/client-04.svg" },
+];
+
+export const aboutParagraphOne =
+  "Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem ipsum dolor sitamet, consetetur sadipscing elitr.";
+
+export const aboutParagraphTwo =
+  "Agent info ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat nostrud tation ullamcorper nonummy nibh.";
+
+export const team = [
+  {
+    id: 1,
+    src: "/images/team-01.png",
+    name: "Maria Spilberg",
+    postion: "Manager",
+  },
+  {
+    id: 2,
+    src: "/images/team-02.png",
+    name: "Stan Barnard",
+    postion: "Agent",
+  },
+  {
+    id: 3,
+    src: "/images/team-03.png",
+    name: "Phillip Morris",
+    postion: "Agent",
+  },
+  {
+    id: 4,
+    src: "/images/team-04.png",
+    name: "Andy Zuckerberg",
+    postion: "Account Manager",
+  },
+];

@@ -15,20 +15,50 @@
 }
 
 /********* Hero Slider Styles  *********/
-.splide__pagination {
-  top: -50px;
+.hero .custom-pagination .not-active {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero .custom-pagination .active {
+  background: #fff;
+}
+
+/********* Agent Slider Styles  *********/
+
+/** to be removed*/
+.agents .custom-pagination {
+  display: none;
+}
+
+.agents .custom-pagination .not-active {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.agents .custom-pagination .active {
+  background: #e2574c;
+}
+
+/********* Testimonial Slider Styles  *********/
+.testimonials .splide__pagination {
+  bottom: 20%;
   display: flex;
   gap: 0.5em;
 }
 
-.splide__pagination__page {
+.testimonials .custom-pagination {
+  display: none; /** to be removed **/
+}
+
+.testimonials .splide__pagination__page {
   background: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.7) !important;
   height: 15px !important;
   width: 15px !important;
 }
 
-.splide__pagination__page.is-active {
+.testimonials .splide__pagination__page.is-active {
   background: #fff !important;
   transform: scale(1) !important;
 }

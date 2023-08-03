@@ -8,3 +8,12 @@ export interface Card {
   numberOfBedrooms: number;
   numberOfBathrooms: number;
 }
+
+export interface Agent {
+  id: number;
+  src: string;
+  title: string;
+  description: string;
+  tel: string;
+  email: string;
+}

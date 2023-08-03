@@ -9,9 +9,15 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ card }) => {
   return (
-    <div className="bg-white border border-[#e6e6e6] flex flex-col items-center justify-center pb-3">
+    <div className="bg-white border border-[#e6e6e6] flex flex-col items-center justify-center pb-3 hover:scale-105 transition">
       <div style={{ width: "100%", height: 250, position: "relative" }}>
-        <Image src={card.src} alt={card.title} fill objectFit="cover" />
+        <Image
+          src={card.src}
+          alt={card.title}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
 
       <div className="pt-6">

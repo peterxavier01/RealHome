@@ -56,14 +56,16 @@ const Navbar = () => {
       >
         <NavToggle size={30} />
       </button>
-      <nav className="flex justify-between max-w-[1440px] w-full h-[90px] lg:px-6 px-4 bg-white drop-shadow-custom">
-        <Image
-          src="/images/logo.svg"
-          alt="Realhome Logo"
-          width={173}
-          height={45}
-          priority
-        />
+      <nav className="flex justify-between max-w-[1440px] w-full h-[90px] lg:px-6 px-4 bg-white drop-shadow-custom mx-auto">
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.svg"
+            alt="Realhome Logo"
+            width={173}
+            height={45}
+            priority
+          />
+        </Link>
 
         <ul
           className={`flex h-[90px] bg-white max-sm:px-3 max-sm:fixed max-sm:inset-y-0 max-sm:right-0 max-sm:left-[30%] max-sm:flex-col max-sm:h-full max-sm:pt-[6em] max-sm:items-start max-sm:gap-6 transition ${

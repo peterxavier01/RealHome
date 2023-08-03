@@ -14,7 +14,7 @@ const clientLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-dark-gray min-h-[384px] w-full text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 py-12 md:py-24 items-start max-w-[1440px] gap-8">
+    <div className="bg-dark-gray min-h-[384px] w-full text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 py-12 md:py-24 items-start max-w-[1440px] gap-8 mx-auto">
       <div className="flex flex-col items-start gap-6">
         <Image
           src="/images/logo-dark.svg"

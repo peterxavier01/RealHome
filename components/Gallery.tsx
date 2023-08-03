@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "./Button";
 import Heading from "./Heading";
 import PropertyCard from "./PropertyCard";
 
@@ -7,7 +8,7 @@ import { cards } from "@/config/data";
 
 const Gallery = () => {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-[#f6f6f6]">
       <Heading
         titleTextOne="Featured"
         titleTextTwo="Properties"
@@ -18,10 +19,14 @@ const Gallery = () => {
         erat lacinia fertum. Donec in velit vel ipsum auctovinar.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {cards.map((card) => (
           <PropertyCard key={card.id} card={card} />
         ))}
+      </div>
+
+      <div className="flex justify-center items-center">
+        <Button>All properties</Button>
       </div>
     </section>
   );
