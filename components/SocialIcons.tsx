@@ -22,7 +22,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({
   return (
     <div
       className={twMerge(
-        `flex lg:flex max-sm:ml-0 items-center gap-4`,
+        `flex lg:flex max-sm:ml-0 items-center gap-4 select-none`,
         containerStyle
       )}
     >

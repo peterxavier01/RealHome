@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Button from "./Button";
 import Heading from "./Heading";
 import PropertyCard from "./PropertyCard";
@@ -26,7 +27,9 @@ const Gallery = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <Button>All properties</Button>
+        <Link href="/property">
+          <Button>All properties</Button>
+        </Link>
       </div>
     </section>
   );

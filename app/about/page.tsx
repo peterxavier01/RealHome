@@ -10,8 +10,8 @@ const About = () => {
   return (
     <main className="max-w-[1440px] mx-auto">
       <section className="my-12 px-4">
-        <BreadCrumb routeOne="Home" routeTwo="About us" />
-        <h1 className="font-light text-[#3c3c3c] text-4xl md:text-[45px] leading-[50px] mt-2">
+        <BreadCrumb href="/" routeOne="Home" routeTwo="About us" />
+        <h1 className="font-light text-[#3c3c3c] text-3xl md:text-[45px] leading-[50px] mt-2">
           About <span className="font-medium"> Our Company</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">

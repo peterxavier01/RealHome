@@ -56,7 +56,7 @@ const Navbar = () => {
       >
         <NavToggle size={30} />
       </button>
-      <nav className="flex justify-between max-w-[1440px] w-full h-[90px] lg:px-6 px-4 bg-white drop-shadow-custom mx-auto">
+      <nav className="flex z-[5] justify-between max-w-[1440px] w-full h-[90px] lg:px-6 px-4 bg-white drop-shadow-custom mx-auto">
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.svg"
@@ -70,7 +70,7 @@ const Navbar = () => {
         <ul
           className={`flex h-[90px] bg-white max-sm:px-3 max-sm:fixed max-sm:inset-y-0 max-sm:right-0 max-sm:left-[30%] max-sm:flex-col max-sm:h-full max-sm:pt-[6em] max-sm:items-start max-sm:gap-6 transition ${
             isOpen ? "max-sm:translate-x-[0%]" : "max-sm:translate-x-[100%]"
-          } max-sm:drop-shadow-md gap-2 z-[5]`}
+          } max-sm:drop-shadow-md gap-2 z-[10]`}
         >
           {links.map((link) => {
             const isActive =

@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import Testimonials from "@/components/Testimonials";
 import { clients } from "@/config/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -47,7 +48,9 @@ export default function Home() {
           Get Started on Buying Your
           <span className="font-bold ml-3">New Home</span>
         </p>
-        <Button>more about us</Button>
+        <Link href="/about">
+          <Button>more about us</Button>
+        </Link>
       </div>
 
       <Testimonials />

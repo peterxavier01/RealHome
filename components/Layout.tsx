@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <header>
+      <header className="sticky top-0 z-[50]">
         <Navbar />
       </header>
       {children}
