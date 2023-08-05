@@ -62,3 +62,9 @@
   background: #fff !important;
   transform: scale(1) !important;
 }
+
+/********* Blog Pagination Styles  *********/
+.blog .rc-pagination-prev,
+.blog .rc-pagination-next {
+  display: none;
+}

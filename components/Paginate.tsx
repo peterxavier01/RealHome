@@ -19,9 +19,9 @@ const itemRender = (
   return element;
 };
 
-const Paginate = () => (
+const Paginate = ({ total }: { total: number }) => (
   <>
-    <Pagination total={30} itemRender={itemRender} />
+    <Pagination total={total} itemRender={itemRender} />
   </>
 );
 

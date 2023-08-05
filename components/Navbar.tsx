@@ -52,7 +52,7 @@ const Navbar = () => {
     <>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="hidden max-sm:block absolute top-7 right-6 z-10 text-gray-600"
+        className="hidden max-sm:block absolute top-7 right-6 z-20 text-gray-600"
       >
         <NavToggle size={30} />
       </button>

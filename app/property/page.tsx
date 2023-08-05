@@ -16,7 +16,7 @@ const Property = () => {
         </div>
 
         <div className="mb-24">
-          <Paginate />
+          <Paginate total={30} />
         </div>
       </section>
     </main>

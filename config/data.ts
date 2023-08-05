@@ -258,3 +258,22 @@ export const posts = [
     body: "Vitapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem sitamet, consetetur sadipscing elitr.",
   },
 ];
+
+export const categories = [
+  { id: 1, category: "Art Direction" },
+  { id: 2, category: "Digital Photography" },
+  { id: 3, category: "Information Architecture" },
+  { id: 4, category: "Interior Design" },
+  { id: 5, category: "motion graphics" },
+  { id: 6, category: "photoshop tools" },
+  { id: 7, category: "web design" },
+];
+
+export const archives = [
+  { id: 1, text: "May 2014" },
+  { id: 2, text: "March 2013" },
+  { id: 3, text: "February 2013" },
+  { id: 4, text: "January 2013" },
+  { id: 5, text: "December 2012" },
+  { id: 6, text: "May 2012" },
+];
