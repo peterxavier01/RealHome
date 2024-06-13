@@ -244,18 +244,21 @@ export const posts = [
     title: "Point of Architecture",
     src: "/images/post-01.png",
     body: "Vitapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem sitamet, consetetur sadipscing elitr.",
+    lastUpdated: "May 4, 2024",
   },
   {
     id: 2,
     title: "Aliquam Erat Volutpat",
     src: "/images/post-02.png",
     body: "Vitapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem sitamet, consetetur sadipscing elitr.",
+    lastUpdated: "Jun 16, 2024",
   },
   {
     id: 3,
     title: "Mauris Posuere",
     src: "/images/post-03.png",
     body: "Vitapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem sitamet, consetetur sadipscing elitr.",
+    lastUpdated: "Aug 4, 2024",
   },
 ];
 
@@ -267,6 +270,21 @@ export const categories = [
   { id: 5, category: "motion graphics" },
   { id: 6, category: "photoshop tools" },
   { id: 7, category: "web design" },
+];
+
+export const links = [
+  { id: 1, href: "/", name: "Home" },
+  { id: 2, href: "/about", name: "About Us" },
+  { id: 3, href: "/property", name: "Property" },
+  { id: 4, href: "/blog", name: "Our Blog" },
+  { id: 5, href: "/contacts", name: "Contacts" },
+];
+
+export const clientLinks = [
+  { id: 1, href: "/sign-in", name: "Sign in" },
+  { id: 2, href: "/forums", name: "Forums" },
+  { id: 3, href: "/promotions", name: "Promotions" },
+  { id: 4, href: "/news", name: "News" },
 ];
 
 export const archives = [
