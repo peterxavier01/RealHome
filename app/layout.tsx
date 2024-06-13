@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { raleway } from "./(home)/fonts";
+import { playfair_display, raleway } from "./(home)/fonts";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={`${raleway.variable} ${playfair_display.variable}`}>
         <Layout>{children}</Layout>
       </body>
     </html>
