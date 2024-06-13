@@ -8,7 +8,7 @@ const Property = () => {
     <main>
       <section className="flex flex-col items-center mt-12 px-4">
         <BreadCrumb href="/" routeOne="Home" routeTwo="Property" />
-        <h1 className="text-3xl md:text-[45px] leading-[50px] mt-2 text-[#3c3c3c] font-light text-center">
+        <h1 className="text-3xl md:text-[45px] leading-heading mt-2 text-primary font-raleway font-light text-center">
           Property <span className="font-medium">Catalog</span>
         </h1>
         <div className="my-14">

@@ -39,11 +39,11 @@ const Testimonials = () => {
                 className="items-center mb-10"
               />
 
-              <p className="text-white text-xl md:text-2xl leading-[30px] md:leading-[35px] mx-auto text-center max-w-[755px] mb-4">
+              <p className="text-white text-xl font-raleway md:text-2xl leading-[30px] md:leading-[35px] mx-auto text-center max-w-[755px] mb-4">
                 {testimonial.text}
               </p>
               <p
-                className={`text-base md:text-xl font-normal leading-[27px] text-white text-center`}
+                className={`text-base md:text-xl font-normal font-playfair-display leading-paragraph text-white text-center`}
               >
                 {testimonial.author},{" "}
                 <span className="font-medium">{testimonial.company}</span>

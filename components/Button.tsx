@@ -10,7 +10,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         type={type}
         disabled={disabled}
         className={twMerge(
-          `h-[48px] py-4 px-6 bg-[#e2574c] rounded-[3px] font-bold uppercase text-base text-white flex justify-center items-center hover:opacity-90 transition active:scale-95 duration-200`,
+          `h-[48px] py-4 px-6 bg-red-1000 font-raleway rounded-[3px] font-bold uppercase text-base text-white flex justify-center items-center hover:opacity-90 transition active:scale-95 duration-200`,
           className
         )}
         ref={ref}

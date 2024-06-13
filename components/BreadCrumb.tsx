@@ -10,10 +10,19 @@ interface BreadCrumbProps {
   href: string;
 }
 
-const BreadCrumb: React.FC<BreadCrumbProps> = ({ routeOne, routeTwo, href }) => {
+const BreadCrumb: React.FC<BreadCrumbProps> = ({
+  routeOne,
+  routeTwo,
+  href,
+}) => {
   return (
-    <div className="flex items-center gap-3">
-      <Link href={href} className="text-[#e2574c] text-sm leading-[50px]">{routeOne}</Link>
+    <div className="flex items-center gap-3 font-raleway">
+      <Link
+        href={href}
+        className="text-red-1000 text-sm capitalize leading-heading"
+      >
+        {routeOne}
+      </Link>
       <span>
         <Image
           src="images/arrow.svg"
@@ -23,7 +32,7 @@ const BreadCrumb: React.FC<BreadCrumbProps> = ({ routeOne, routeTwo, href }) => 
           className="text-red-500"
         />
       </span>
-      <span className="text-[#3c3c3c] text-sm leading-[50px] capitalize">
+      <span className="text-primary text-sm leading-heading capitalize">
         {routeTwo}
       </span>
     </div>

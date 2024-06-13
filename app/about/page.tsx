@@ -1,17 +1,18 @@
+import Image from "next/image";
+
 import BreadCrumb from "@/components/BreadCrumb";
 import Features from "@/components/Features";
 import Newsletter from "@/components/Newsletter";
 import Team from "@/components/Team";
-import { aboutParagraphOne, aboutParagraphTwo, team } from "@/config/data";
-import Image from "next/image";
-import React from "react";
+
+import { aboutParagraphOne, aboutParagraphTwo } from "@/config/data";
 
 const About = () => {
   return (
-    <main className="max-w-[1440px] mx-auto">
-      <section className="my-12 px-4">
+    <main>
+      <section className="my-12 px-4 wrapper">
         <BreadCrumb href="/" routeOne="Home" routeTwo="About us" />
-        <h1 className="font-light text-[#3c3c3c] text-3xl md:text-[45px] leading-[50px] mt-2">
+        <h1 className="font-light text-primary text-3xl md:text-[45px] leading-heading mt-2 font-raleway">
           About <span className="font-medium"> Our Company</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -26,7 +27,7 @@ const About = () => {
             />
           </div>
 
-          <div className="flex flex-col gap-4 text-base leading-7 font-normal text-[#797979]">
+          <div className="flex flex-col gap-4 text-base leading-7 font-normal text-gray-3000 font-playfair-display">
             <p>{aboutParagraphOne}</p>
             <p>{aboutParagraphTwo}</p>
           </div>

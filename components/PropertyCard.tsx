@@ -9,7 +9,7 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ card }) => {
   return (
-    <div className="bg-white border border-[#e6e6e6] flex flex-col items-center justify-center pb-3 hover:scale-105 transition">
+    <div className="bg-white border border-gray-4000 flex flex-col items-center justify-center pb-3">
       <div style={{ width: "100%", height: 250, position: "relative" }}>
         <Image
           src={card.src}
@@ -21,20 +21,18 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ card }) => {
       </div>
 
       <div className="pt-6">
-        <p className="text-[22px] text-[#3c3c3c] font-medium text-center mb-1">
+        <p className="text-[22px] text-primary font-medium text-center mb-1 font-raleway">
           {card.title}
         </p>
-        <p className="text-[15px] text-[#797979] text-center">
+        <p className="text-[15px] text-gray-3000 text-center font-playfair-display">
           {card.state} / {card.city}
         </p>
-        <p className="text-base text-[#e2574c] text-center my-4">
-          {card.price}
-        </p>
+        <p className="text-base text-red-1000 text-center my-4">{card.price}</p>
       </div>
 
-      <div className="bg-[#e6e6e6] h-[1px] w-full my-2" />
+      <div className="bg-gray-4000 h-[1px] w-full my-2" />
 
-      <div className="text-[13px] text-[#797979] flex items-center justify-center mt-2 gap-2 md:gap-3">
+      <div className="text-[13px] text-gray-3000 flex items-center justify-center mt-2 gap-2 md:gap-3">
         <p>{card.size} Sq Ft</p>
         <span className="bg-[#c0c0c0] w-1 h-1 rounded-full" />
         <p>

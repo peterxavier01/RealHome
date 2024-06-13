@@ -3,7 +3,7 @@
 import React from "react";
 import Pagination from "rc-pagination";
 import Button from "./Button";
-import "../index.scss";
+import "../styles/index.scss";
 
 const itemRender = (
   current: number,

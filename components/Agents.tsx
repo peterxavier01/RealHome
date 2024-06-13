@@ -11,7 +11,7 @@ import Slider from "./Slider";
 
 const Agents: React.FC = () => {
   return (
-    <div className="agents">
+    <div className="agents wrapper">
       <Slider
         options={{
           type: "loop",
@@ -38,14 +38,14 @@ const Agents: React.FC = () => {
                 />
               </div>
 
-              <div className="sm:col-span-2 flex flex-col pb-24">
+              <div className="sm:col-span-2 flex flex-col pb-24 font-playfair-display">
                 <div className="relative">
                   <Heading titleTextOne="Our" titleTextTwo="Agents" />
                 </div>
-                <p className="text-[#3c3c3c] font-bold mb-8 text-[25px] leading-[27px]">
+                <p className="text-primary font-bold mb-8 text-[25px] leading-paragraph">
                   {agent.title}
                 </p>
-                <p className="text-base leading-[27px] text-[#797979]">
+                <p className="text-base leading-paragraph text-gray-3000">
                   {agent.description}
                 </p>
 
@@ -56,10 +56,10 @@ const Agents: React.FC = () => {
                       alt="telephone icon"
                       width={14}
                       height={14}
-                      className="text-[#797979]"
+                      className="text-gray-3000"
                       style={{ width: "auto", height: "auto" }}
                     />
-                    <p className="text-[#3c3c3c] text-base leading-[27px]">
+                    <p className="text-primary text-base leading-paragraph">
                       {agent.tel}
                     </p>
                   </div>
@@ -69,10 +69,10 @@ const Agents: React.FC = () => {
                       alt="email icon"
                       width={14}
                       height={14}
-                      className="text-[#797979]"
+                      className="text-gray-3000"
                       style={{ width: "auto", height: "auto" }}
                     />
-                    <p className="text-[#e2574c] underline text-base leading-[27px] cursor-pointer">
+                    <p className="text-red-1000 underline text-base leading-paragraph cursor-pointer">
                       {agent.email}
                     </p>
                   </div>
