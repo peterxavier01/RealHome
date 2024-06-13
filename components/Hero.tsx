@@ -11,7 +11,14 @@ import { slides } from "@/config/data";
 
 const Hero: React.FC = () => {
   return (
-    <div className="hero">
+    <div
+      className="hero"
+      style={{
+        aspectRatio: "16/9",
+        width: "100%",
+        height: "100vh",
+      }}
+    >
       <Slider
         options={{
           type: "loop",
@@ -31,12 +38,14 @@ const Hero: React.FC = () => {
               src={slide.src}
               alt={slide.title}
               fill
+              sizes="100vw"
               priority
-              className="object-cover"
+              loading="eager"
+              className="object-cover aspect-square"
             />
 
             <div className="w-full absolute left-2/4 top-3/4 translate-x-[-50%] translate-y-[-75%] z-10">
-              <p className="text-white text-center font-bold text-3xl md:text-5xl leading-[56px] md:mb-6">
+              <p className="text-white text-center font-bold text-3xl md:text-5xl leading-[56px] md:mb-6 font-raleway">
                 {slide.title}
               </p>
               <div className="flex justify-center gap-8 items-center">
