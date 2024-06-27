@@ -11,7 +11,12 @@ const About = () => {
   return (
     <main>
       <section className="my-12 px-4 wrapper">
-        <BreadCrumb href="/" routeOne="Home" routeTwo="About us" />
+        <BreadCrumb
+          breadcrumbs={[
+            { name: "Home", href: "/" },
+            { name: "About us", href: "#" },
+          ]}
+        />
         <h1 className="font-light text-primary text-3xl md:text-[45px] leading-heading mt-2 font-raleway">
           About <span className="font-medium"> Our Company</span>
         </h1>
