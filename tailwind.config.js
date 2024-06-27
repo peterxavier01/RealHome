@@ -23,9 +23,13 @@ module.exports = {
         "gray-2000": "#242424",
         "gray-3000": "#797979",
         "gray-4000": "#e6e6e6",
+        "gray-5000": "#333333",
+        "gray-5500": "#f6f6f6",
+        "gray-6000": "#f0f4f5",
+        "red-1000": "#e2574c",
+        "blue-1000": "#2a8da6",
         primary: "#3c3c3c",
         muted: "#c2c1c1",
-        "red-1000": "#e2574c",
       },
       backgroundColor: {
         "light-gray": "rgb(0 0 0 / 0.051)",
@@ -34,8 +38,13 @@ module.exports = {
       lineHeight: {
         paragraph: "27px",
         heading: "50px",
+        large: "65px",
+      },
+      fontSize: {
+        "heading-1": "45px",
+        "heading-2": "37px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
