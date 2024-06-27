@@ -24,6 +24,10 @@
   @apply outline-none focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent
 }
 
+.loader {
+  @apply w-10 h-10 border-4 border-t-transparent rounded-full animate-spin
+}
+
 /**** Map Styles ****/
 .leaflet-container {
   width: 100%;
