@@ -1,13 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
+
 import Button from "./Button";
 import Heading from "./Heading";
 import PropertyCard from "./PropertyCard";
 
-import { cards } from "@/config/data";
+import { Property } from "@/types";
+import { getProperties } from "@/lib/getProperties";
+import usePaginationDataStore from "@/store/usePaginationDataStore";
 
 const Gallery = () => {
+  const setPaginationData = usePaginationDataStore(
+    (state) => state.setPaginationData
+  );
+
+  const { data: properties } = useQuery({
+    queryKey: ["property"],
+    queryFn: () => getProperties(1),
+  });
+
+  const pagiantionIdArray = properties?.map((item: Property) => {
+    return item.id;
+  });
+
+  useEffect(() => {
+    setPaginationData(pagiantionIdArray);
+  }, [pagiantionIdArray, setPaginationData]);
+
   return (
     <section className="py-24 bg-[#f6f6f6]">
       <div className="wrapper">
@@ -22,9 +44,13 @@ const Gallery = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {cards.map((card) => (
-            <PropertyCard key={card.id} card={card} />
-          ))}
+          {properties
+            ? properties
+                .slice(0, 6)
+                .map((property: Property) => (
+                  <PropertyCard key={property.id} property={property} />
+                ))
+            : null}
         </div>
 
         <div className="flex justify-center items-center">
