@@ -37,6 +37,7 @@ const Gallery = () => {
           titleTextOne="Featured"
           titleTextTwo="Properties"
           className="items-center"
+          isBordered
         />
         <p className="text-base leading-7 text-gray-3000 font-playfair-display text-center font-normal max-w-[559px] m-auto mb-12">
           Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus

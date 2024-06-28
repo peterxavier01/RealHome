@@ -40,7 +40,11 @@ const Agents: React.FC = () => {
 
               <div className="sm:col-span-2 flex flex-col pb-24 font-playfair-display">
                 <div className="relative">
-                  <Heading titleTextOne="Our" titleTextTwo="Agents" />
+                  <Heading
+                    titleTextOne="Our"
+                    titleTextTwo="Agents"
+                    isBordered
+                  />
                 </div>
                 <p className="text-primary font-bold mb-8 text-[25px] leading-paragraph">
                   {agent.title}

@@ -37,6 +37,7 @@ const Testimonials = () => {
                 titleTextOne="Testimonials"
                 titleStyle="text-white"
                 className="items-center mb-10"
+                isBordered
               />
 
               <p className="text-white text-xl font-raleway md:text-2xl leading-[30px] md:leading-[35px] mx-auto text-center max-w-[755px] mb-4">
