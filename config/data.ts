@@ -100,6 +100,22 @@ export const cards = [
   },
 ];
 
+export const tabs = [
+  { id: 1, title: "Chicago", value: "tab1" },
+  { id: 2, title: "Kansas City", value: "tab2" },
+  { id: 3, title: "Denver", value: "tab3" },
+  { id: 4, title: "New-York", value: "tab4" },
+  { id: 5, title: "London", value: "tab5" },
+];
+
+export const tabContent = [
+  { id: 1, value: "tab1", regex: "chicago" },
+  { id: 2, value: "tab2", regex: "kansas" },
+  { id: 3, value: "tab3", regex: "denver" },
+  { id: 4, value: "tab4", regex: "new-york" },
+  { id: 5, value: "tab5", regex: "london" },
+];
+
 export const features = [
   {
     id: 1,
