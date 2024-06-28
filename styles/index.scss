@@ -45,7 +45,9 @@ $pagination-item-input-bg: #fff;
   }
 
   &-item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 50px;
     height: 48px;
     margin-right: 8px;
@@ -82,6 +84,7 @@ $pagination-item-input-bg: #fff;
     &:hover {
       border-color: $primary-color;
       transition: all 0.3s;
+
       a {
         color: #fff;
       }
@@ -136,6 +139,7 @@ $pagination-item-input-bg: #fff;
   &-jump-next {
     margin-right: 8px;
   }
+
   &-prev,
   &-next,
   &-jump-prev,
@@ -189,10 +193,12 @@ $pagination-item-input-bg: #fff;
   }
 
   &-disabled {
+
     &,
     &:hover,
     &:focus {
       cursor: not-allowed;
+
       .#{$pagination-prefix-cls}-item-link {
         color: fade(#000, 25%);
         border-color: #d9d9d9;
@@ -212,6 +218,7 @@ $pagination-item-input-bg: #fff;
 
     // IE11 css hack. `*::-ms-backdrop,` is a must have
     @media all and (-ms-high-contrast: none) {
+
       *::-ms-backdrop,
       & {
         vertical-align: top;
@@ -242,10 +249,12 @@ $pagination-item-input-bg: #fff;
     height: $pagination-item-size-sm;
     line-height: $pagination-item-size-sm;
     vertical-align: top;
+
     .#{$pagination-prefix-cls}-item-link {
       height: $pagination-item-size-sm;
       background-color: transparent;
       border: 0;
+
       &::after {
         height: $pagination-item-size-sm;
         line-height: $pagination-item-size-sm;
