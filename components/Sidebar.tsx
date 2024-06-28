@@ -49,7 +49,7 @@ const Sidebar = () => {
             >
               {post.title}
             </Link>
-            <p className="text-gray-3000 font-playfair-display text-sm leading-6 font-normal mt-1">
+            <p className="text-gray-3000 font-playfair-display text-sm leading-6 font-normal mt-1 line-clamp-4">
               {post.body}
             </p>
             <p className="text-sm leading-[35px] text-gray-3000 font-bold font-playfair-display mt-1">
