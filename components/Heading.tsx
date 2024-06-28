@@ -9,6 +9,7 @@ interface HeadingProps {
   titleStyle?: string;
   isSubHeader?: boolean;
   subHeader?: string;
+  isBordered?: boolean;
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -18,10 +19,11 @@ const Heading: React.FC<HeadingProps> = ({
   titleStyle,
   isSubHeader,
   subHeader,
+  isBordered,
 }) => {
   if (isSubHeader) {
     return (
-      <h4 className="text-[37px] text-primary leading-[65px] font-medium font-raleway mb-4">
+      <h4 className="text-heading-2 text-primary leading-large font-medium font-raleway mb-4">
         {subHeader}
       </h4>
     );
@@ -42,7 +44,9 @@ const Heading: React.FC<HeadingProps> = ({
         </span>
         <span className="font-medium">{titleTextTwo}</span>
       </h2>
-      <span className="h-[3px] w-28 bg-red-1000 rounded-sm inline-block" />
+      {isBordered ? (
+        <span className="h-[3px] w-28 bg-red-1000 rounded-sm inline-block" />
+      ) : null}
     </div>
   );
 };
