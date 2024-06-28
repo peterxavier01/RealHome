@@ -41,7 +41,9 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
     return () => {
       // Clean up the custom pagination when the component unmounts
       if (rootRef.current) {
-        rootRef.current.unmount();
+        setTimeout(() => {
+          rootRef.current!.unmount();
+        }, 0);
       }
     };
   }, [index, slideCount, onPaginationUpdated]);
