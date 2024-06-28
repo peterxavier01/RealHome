@@ -1,17 +1,30 @@
 import { forwardRef } from "react";
-
 import { cn } from "@/lib/utils";
 
-interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface TextInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
   isTextArea?: boolean;
 }
 
-const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
+const TextInput = forwardRef<
+  HTMLInputElement | HTMLTextAreaElement,
+  TextInputProps
+>(
   (
-    { className, children, disabled, placeholder, type, isTextArea, ...props },
+    {
+      className,
+      children,
+      disabled,
+      placeholder,
+      type,
+      isTextArea,
+      value,
+      onChange,
+      ...props
+    },
     ref
   ) => {
-    const commonProps = { placeholder, disabled };
+    const commonProps = { placeholder, disabled, value, onChange };
 
     if (isTextArea) {
       return (
@@ -21,7 +34,9 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
             "rounded-[3px] bg-white border-2 border-gray-4000 font-raleway placeholder p-4 h-[138px] w-full input-outline",
             className
           )}
+          ref={ref as React.Ref<HTMLTextAreaElement>}
           {...commonProps}
+          {...props}
         ></textarea>
       );
     }
@@ -34,9 +49,9 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
             "rounded-[3px] bg-white border-2 border-gray-4000 font-raleway placeholder h-[58px] w-full px-4 py-2 input-outline",
             className
           )}
-          ref={ref}
-          {...props}
+          ref={ref as React.Ref<HTMLInputElement>}
           {...commonProps}
+          {...props}
         />
       </label>
     );
