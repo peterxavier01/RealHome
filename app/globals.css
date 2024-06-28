@@ -45,12 +45,6 @@
 }
 
 /********* Agent Slider Styles  *********/
-
-/** to be removed*/
-.agents .custom-pagination {
-  display: none;
-}
-
 .agents .custom-pagination .not-active {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -62,14 +56,13 @@
 
 /********* Testimonial Slider Styles  *********/
 .testimonials .splide__pagination {
-  bottom: 20%;
+  bottom: 30%;
   display: flex;
   gap: 0.5em;
 }
 
 .testimonials .custom-pagination {
   display: none;
-  /** to be removed **/
 }
 
 .testimonials .splide__pagination__page {
