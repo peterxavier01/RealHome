@@ -2,11 +2,12 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Splide, SplideTrack } from "@splidejs/react-splide";
+import { twMerge } from "tailwind-merge";
 
 import CustomPagination from "./CustomPagination";
+
 import "@splidejs/react-splide/css";
-import { twMerge } from "tailwind-merge";
-// import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 interface SliderProps {
   options: object;
