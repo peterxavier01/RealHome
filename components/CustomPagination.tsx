@@ -16,7 +16,8 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
   const rootRef = useRef<ReactDOM.Root | null>(null);
 
   useEffect(() => {
-    if (paginationRef.current) {
+    // Ensure slideCount is defined before rendering
+    if (paginationRef.current && slideCount !== undefined) {
       const customPagination = (
         <div className="custom-pagination flex items-center gap-4">
           {Array.from({ length: slideCount! }, (_, i) => (
@@ -33,20 +34,24 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
         </div>
       );
 
-      // Use ReactDOM.createPortal to render a custom pagination into the paginationRef.
-      rootRef.current = ReactDOM.createRoot(paginationRef.current);
+      // Check if rootRef.current is null, if it is, create a new root.
+      if (!rootRef.current) {
+        rootRef.current = ReactDOM.createRoot(paginationRef.current);
+      }
+      // Use root.render() to render the custom pagination into the paginationRef.
       rootRef.current.render(customPagination);
     }
+  }, [index, slideCount, onPaginationUpdated]);
 
+  // Only unmount when the component is unmounted
+  useEffect(() => {
     return () => {
-      // Clean up the custom pagination when the component unmounts
       if (rootRef.current) {
-        setTimeout(() => {
-          rootRef.current!.unmount();
-        }, 0);
+        rootRef.current.unmount();
+        rootRef.current = null;
       }
     };
-  }, [index, slideCount, onPaginationUpdated]);
+  }, []);
 
   return <div ref={paginationRef} />;
 };
