@@ -1,23 +1,24 @@
 import BreadCrumb from "@/components/BreadCrumb";
-import CustomTabs from "@/components/CustomTabs";
-import Paginate from "@/components/Paginate";
-import React from "react";
+import PageComponent from "./_components/PageComponent";
 
-const Property = () => {
+interface PropertyProps {
+  searchParams: { page?: string };
+}
+
+const Property = ({ searchParams }: PropertyProps) => {
+  const currentPage = Number(searchParams?.page ?? 1);
+
   return (
     <main>
       <section className="flex flex-col items-center mt-12 px-4">
-        <BreadCrumb href="/" routeOne="Home" routeTwo="Property" />
-        <h1 className="text-3xl md:text-[45px] leading-heading mt-2 text-primary font-raleway font-light text-center">
-          Property <span className="font-medium">Catalog</span>
-        </h1>
-        <div className="my-14">
-          <CustomTabs />
-        </div>
+        <BreadCrumb
+          breadcrumbs={[
+            { name: "Home", href: "/" },
+            { name: "Property", href: "#" },
+          ]}
+        />
 
-        <div className="mb-24">
-          <Paginate total={30} />
-        </div>
+        <PageComponent page={currentPage} />
       </section>
     </main>
   );
