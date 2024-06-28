@@ -23,7 +23,7 @@ const Agents: React.FC = () => {
           pagination: false,
           height: "100%",
         }}
-        className="top-[53%] left-[50%] translate-x-[-50%] translate-y-[-53%]"
+        className="hidden lg:block top-[22%] translate-y-[-22%] left-[62%] translate-x-[-62%]"
       >
         {agents.map((agent) => (
           <SplideSlide key={agent.id}>
