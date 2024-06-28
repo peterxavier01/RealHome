@@ -1,6 +1,6 @@
 "use client";
 
-import L from "leaflet";
+import L, { LatLngTuple } from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import "leaflet/dist/leaflet.css";
@@ -16,16 +16,17 @@ const markerIcon = new L.Icon({
 
 const Map = () => {
   const mapBox = mapServices[1];
+  const center: LatLngTuple = [6.5227873428325145, 3.3711407893425207];
 
   return (
     <MapContainer
-      center={[51.505, -0.09]}
+      center={center}
       zoom={13}
       scrollWheelZoom={false}
       className="z-0 border-[3px] border-gray-4000"
     >
       <TileLayer attribution={mapBox.attribution} url={mapBox.url} />
-      <Marker position={[51.505, -0.09]} icon={markerIcon}>
+      <Marker position={center} icon={markerIcon}>
         <Popup>RealHome Base</Popup>
       </Marker>
     </MapContainer>
