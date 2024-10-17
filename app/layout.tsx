@@ -1,7 +1,8 @@
-import Layout from "@/components/Layout";
-import { playfair_display, raleway } from "./(home)/fonts";
-import "./globals.css";
 import type { Metadata } from "next";
+
+import { inter, playfair_display, raleway } from "./(root)/(home)/fonts";
+import "./globals.css";
+
 import QueryProvider from "@/providers/QueryProvider";
 import ToastProvider from "@/providers/ToastProvider";
 
@@ -17,10 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${playfair_display.variable}`}>
+      <body
+        className={`${raleway.variable} ${playfair_display.variable} ${inter.variable}`}
+      >
         <QueryProvider>
           <ToastProvider />
-          <Layout>{children}</Layout>
+          {children}
         </QueryProvider>
       </body>
     </html>
