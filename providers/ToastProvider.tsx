@@ -16,6 +16,7 @@ const ToastProvider = () => {
       pauseOnHover
       theme="light"
       transition={Flip}
+      limit={3}
     />
   );
 };
