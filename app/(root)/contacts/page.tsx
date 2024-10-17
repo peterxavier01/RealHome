@@ -5,7 +5,7 @@ import BreadCrumb from "@/components/BreadCrumb";
 import dynamic from "next/dynamic";
 import ContactFormSection from "@/components/ContactFormSection";
 
-const Map = dynamic(() => import("../../components/Map"), { ssr: false });
+const Map = dynamic(() => import("@/components/Map"), { ssr: false });
 
 const Contact = () => {
   return (

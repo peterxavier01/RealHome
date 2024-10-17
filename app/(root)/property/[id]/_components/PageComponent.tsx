@@ -59,7 +59,7 @@ const PageComponent = ({ propertyId }: PageComponentProps) => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen text-slate-800 font-medium flex items-center justify-center">
+      <div className="min-h-screen font-medium flex items-center justify-center">
         <div className="loader border-primary" />
       </div>
     );

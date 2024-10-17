@@ -41,7 +41,7 @@ const CustomTabs = ({ properties, isLoading }: CustomTabsProps) => {
             <div className="animate-pulse bg-gray-400 h-14 w-56"></div>
           </div>
         ) : (
-          <Tabs.Content key={content.id} className="" value={content.value}>
+          <Tabs.Content key={content.id} value={content.value}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mb-12">
               {properties
                 ? properties

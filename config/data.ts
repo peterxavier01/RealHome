@@ -1,3 +1,11 @@
+import {
+  BookUser,
+  Building,
+  Home,
+  MessageCirclePlus,
+  Users,
+} from "lucide-react";
+
 export const tabs = [
   { id: 1, title: "Chicago", value: "tab1" },
   { id: 2, title: "Kansas City", value: "tab2" },
@@ -208,4 +216,12 @@ export const archives = [
   { id: 4, text: "January 2013" },
   { id: 5, text: "December 2012" },
   { id: 6, text: "May 2012" },
+];
+
+export const sidebarItems = [
+  { id: 1, href: "/admin", name: "Dashboard", icon: Home },
+  { id: 2, href: "/admin/users", name: "Users", icon: Users },
+  { id: 3, href: "/admin/properties", name: "Properties", icon: Building },
+  { id: 4, href: "/admin/posts", name: "Posts", icon: BookUser },
+  { id: 5, href: "/admin/messages", name: "Messages", icon: MessageCirclePlus },
 ];
