@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "sonner";
 
@@ -18,6 +19,11 @@ export default async function DashboardLayout({
   children: React.ReactNode;
 }) {
   const session = await auth();
+
+  if (session?.user.role !== "ADMIN") {
+    redirect("/auth/login");
+  }
+
   return (
     <SessionProvider session={session}>
       <Layout>

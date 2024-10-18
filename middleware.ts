@@ -13,7 +13,6 @@ const { auth } = NextAuth(authConfig);
 export default auth((req) => {
   const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
-  const adminEmail = req.auth?.user.email === process.env.ADMIN_EMAIL;
 
   const isApiAuthRoute = nextUrl.pathname.startsWith(apiAuthPrefix);
   const isAuthRoute = authRoutes.includes(nextUrl.pathname);
@@ -30,11 +29,6 @@ export default auth((req) => {
   if (isAuthRoute) {
     if (isLoggedIn) {
       return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
-    }
-
-    // Allow only admin email to access dashboard
-    if (!adminEmail) {
-      return;
     }
     return;
   }
