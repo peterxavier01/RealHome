@@ -13,7 +13,7 @@ const { auth } = NextAuth(authConfig);
 export default auth((req) => {
   const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
-  const adminEmail = req.auth?.user.email === process.env.ADMIN_EMAIL;
+  const adminEmail = req.auth?.user.email === process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
   const isApiAuthRoute = nextUrl.pathname.startsWith(apiAuthPrefix);
   const isAuthRoute = authRoutes.includes(nextUrl.pathname);
