@@ -26,15 +26,15 @@ export default auth((req) => {
     return;
   }
 
-  // Allow only admin email to access dashboard
-  if (!isLoggedIn && !adminEmail) {
-    return Response.redirect(new URL("/auth/login", nextUrl))
-  }
-
   // Redirect user from any auth route to dashboard page if logged in
   if (isAuthRoute) {
     if (isLoggedIn) {
       return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+    }
+
+    // Allow only admin email to access dashboard
+    if (!adminEmail) {
+      return Response.redirect(new URL("/auth/login", nextUrl))
     }
     return;
   }
