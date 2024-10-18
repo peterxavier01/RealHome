@@ -34,7 +34,7 @@ export default auth((req) => {
 
     // Allow only admin email to access dashboard
     if (!adminEmail) {
-      return Response.redirect(new URL("/auth/login", nextUrl))
+      return;
     }
     return;
   }
