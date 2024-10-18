@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "sonner";
+import { toast } from "react-toastify";
 
 import Layout from "@/components/admin/Layout";
 
@@ -21,6 +22,7 @@ export default async function DashboardLayout({
   const session = await auth();
 
   if (session?.user.role !== "ADMIN") {
+    toast.error("Only admins can log in");
     redirect("/auth/login");
   }
 
